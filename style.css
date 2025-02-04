@@ -133,9 +133,7 @@
   z-index: 1;
 }
 
-@media (max-width: 585px) {
 
-}
 @media (max-width: 1222px) {
   .companyName{
       font-size: 50% !important;
@@ -147,8 +145,23 @@
   }
 }
 @media (max-width: 1074px) {
+  .quoteAnchor{
+      display: none !important;
+  }
+  .companyName::after{
+      font-size: 100% !important;
+  }
+}
+@media (max-width: 990px){
+  .cblpDiv{
+      width: 100% !important;
+      margin: 2% 0 !important;
+      margin-bottom: 0%;
+  }
+}
+@media (max-width: 354px) {
   .nestedPTag2{
-      display: none;
+      display: none !important;
   }
   .companyName::after{
       content: "Connect Builders";
@@ -177,9 +190,6 @@
 @media (max-width: 393px) {
   .logoImage{
       height: 70px !important;
-  }
-  .companyName{
-      font-size: 40% !important;
   }
 }
 .buildersName{
