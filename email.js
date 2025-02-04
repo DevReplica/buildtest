@@ -7,10 +7,10 @@
         event.preventDefault();
 
         // Collect form values
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
 
 
         console.log(name);
@@ -25,15 +25,25 @@
         }
 
         // Prepare email template parameters
-        var templateParams = {
+        // let templateParams = {
+        //     from_name: name,
+        //     from_email: email,
+        //     to_email: "connectbuildersemobilemarket@gmail.com",
+        //     subject: subject,
+        //     message: message
+        // };
+        let templateParams = {
             from_name: name,
             from_email: email,
+            reply_to: email,
+            to_email: "connectbuildersemobilemarket@gmail.com",
             subject: subject,
             message: message
         };
+        
 
         // Send email using EmailJS
-        emailjs.send("service_y1453zu", "template_sacy3fs", templateParams)
+        emailjs.send("service_5b46uka", "template_vn3g7dq", templateParams)
             .then(function(response) {
                 alert("Email sent successfully!");
                 document.getElementById("contactForm").reset(); // Clear the form
