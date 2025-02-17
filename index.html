@@ -70,20 +70,26 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm pe-lg-0">
-        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-white">
-                    <a href="">
+    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm pe-lg-0 myNav">
+        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0 myNav">
+            <a href="index.html" class="myNav">
+                <h1 class="m-0 text-white myNav">
+                    <a href="" style="display: flex; align-items: center; justify-content: center;" class="myNav">
                         <img class="logoImage" style="height: 100px;" src="./img/zubbyConnekt-removebg-preview.png" alt="">
                         <span style="font-size: 60%;" class="companyName">
-                            <span class="nestedPTag2">Connect Builders E-Mobile Market</span>
+                            <span style="display: flex; flex-direction: column;">
+                                <span class="nestedPTag2">Connect Builders E-Mobile Market</span>
+                                <span class="nestedPTag3"></span>
+                                <span class="spanBelow" style="font-size: 12px; color: #ccc; display: flex; flex-wrap: wrap; margin-top: 3%;">
+                                    The Realtors Tech Estate Service & Quality Supplies.
+                                </span>
+                            </span>
                         </span>
                     </a>
                 </h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler hamButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon hamBugger"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
@@ -96,17 +102,7 @@
             </div>
         </nav>
     </div>
-
-    <!-- Quote Div Starts-->
-    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm pe-lg-0 quoteDiv" style="top: 100px; z-index: 1000; padding: 0.5% 0;">
-        <div class="text-center py-2">
-            <i class="fa fa-2x fa-quote-left text-primary me-2"></i>
-            <span class="text-light quoteText" style="font-size: 22px;">The Realtors Tech Estate Service And Quality Supplies</span>
-            <i class="fa fa-2x fa-quote-right text-primary me-2"></i>
-        </div>
-    </div>
-    <!-- Quote Div Ends-->
-    <!-- Navbar End -->
+    <!-- Navbar Ends -->
 
 
     <!-- Carousel Start -->
@@ -183,7 +179,7 @@
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100" src="img/materials mix 2 (1).jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/DALL·E 2025-02-17 19.22.12 - A high-resolution, iconic image displaying a diverse collection of essential building and construction materials in an organized layout. The scene fea.webp" style="object-fit: cover; border-radius: 5px;">
                 </div>
             </div>
         </div>
