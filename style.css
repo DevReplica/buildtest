@@ -66,6 +66,10 @@
   height: 46px;
 }
 
+.hiddenFaq{
+  display: none;
+}
+
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -121,6 +125,9 @@
   .navbar-dark .navbar-nav .nav-link  {
       margin-left: 0;
       padding: 10px 0;
+  }
+  .hiddenFaq{
+    display: block !important;
   }
 }
 
